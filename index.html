@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .field{
+            width: 1200px;
+            height: 400px;
+            background-color: lightblue;
+            margin:0 auto;
+            border-radius: 30px;
+        }
+        .bat{
+            height: 370px;
+            transition:transform 0.3s ease-in;
+        }
+
+        .field:hover .bat{
+            
+            transform: rotate(-45deg);
+            transform-origin:top right ;
+          
+        }
+        .ball{
+            height: 25px;
+            width: 25px;
+            background-color: red;
+            border-radius: 25px;
+            position:relative;
+            left: 330px;
+            bottom:30px;
+            transition:transform 1s ease-out .4s;
+        }
+        .field:hover .ball{
+            transform: translate(700px,-200px) scale(10);
+        }
+    </style>
 </head>
 <body>
-    <h1>hello world</h1>
+    <div class="field">
+        <img class="bat" src="PngItem_5222366 (1).png" alt="">
+        <div class="ball"></div>
+    </div>
 </body>
 </html>
